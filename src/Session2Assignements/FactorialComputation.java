@@ -21,7 +21,7 @@ public class FactorialComputation {
 				i++;
 			}
 			System.out.println("----------------------------");
-			System.out.print("Fatorial of "+number+" is "+factorial+".");
+			System.out.print("Fatorial of " +number+ " is "+factorial+".");
 		}
 		scanner.close();
 		
