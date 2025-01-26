@@ -57,11 +57,8 @@ public class RectangleMeasurment {
         	System.out.println(
         			"Based on calculations, length is "+quotient+" times the width, plus a remainder of "+remainder+"."
         			);
-//            System.out.println("----------------------------");
-//        	System.out.println("Based on the remainder calculation, Length is "+quotient+" times width.");
-            
+        	
         }
-	    
         scanner.close();
      }
 }

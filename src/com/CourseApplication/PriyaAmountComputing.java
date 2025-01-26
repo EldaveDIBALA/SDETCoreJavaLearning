@@ -141,6 +141,8 @@ public class PriyaAmountComputing {
 		System.out.print("After discount and tax, the amount is: $"+finalAmount);
 		
 		scanner.close();
+		
 	}	
+	
 } 
 
