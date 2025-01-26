@@ -1,4 +1,4 @@
-package Lab1;
+package CourseApplication;
 
 public class PriyaAmountComputing {
     int priceItemA = 200;
