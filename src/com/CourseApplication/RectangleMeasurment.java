@@ -1,4 +1,4 @@
-package CourseApplication;
+package com.CourseApplication;
 
 import java.util.Scanner;
 

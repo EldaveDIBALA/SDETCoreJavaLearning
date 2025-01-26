@@ -1,4 +1,4 @@
-package CourseApplication;
+package com.CourseApplication;
 
 import java.util.Scanner;
 
@@ -11,10 +11,12 @@ public class SwitchApplication {
         String keyboardInput = scanner.nextLine();
 
         switch (keyboardInput.toUpperCase()) {
-            case "DEV", "BUILD", "QA", "STAGE", "PROD":
-                System.out.println("Test case is executing on " + keyboardInput +".");
+            case "DEV", "BUILD", "QA", "STAGE", "PROD" :
+                System.out.println(
+                		"Test case is will be executed on "+ keyboardInput +" environment."
+                );
                 break;
-            default:
+            default :
                 System.out.println("Please, enter a registered environement.");
         }
 
