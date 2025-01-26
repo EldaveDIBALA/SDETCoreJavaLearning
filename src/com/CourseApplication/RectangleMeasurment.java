@@ -4,38 +4,64 @@ import java.util.Scanner;
 
 public class RectangleMeasurment {
     private double length;
-    private double depth;
+    private double width;
 
-    public RectangleMeasurment(double length, double depth) {
+    public RectangleMeasurment(double length, double width) {
         this.length = length;
-        this.depth = depth;
+        this.width = width;
     }
 
     public double calculateArea() {
-        return length * depth;
+        return length * width;
     }
     
     public double calculatePerimeter() {
-    	return 2 * (length + depth);
+    	return 2 * (length + width);
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); 
 
-        System.out.print("Veuillez entrer la longueur du rectangle : ");
+        System.out.print("Please enter rectangle length: ");
         double length = scanner.nextDouble();
 
-        System.out.print("Veuillez entrer la largeur du rectangle : ");
-        double depth = scanner.nextDouble();
+        System.out.print("Please enter rectangle width: ");
+        double width = scanner.nextDouble();
 
 
-        RectangleMeasurment rectangle = new RectangleMeasurment(length, depth);
+        RectangleMeasurment rectangle = new RectangleMeasurment(length, width);
 
         double area = rectangle.calculateArea();
         double perimeter = rectangle.calculatePerimeter();
+
+        System.out.println("----------------------------");
+        System.out.println("The surface is up to: " +area+ " square.");
+        System.out.println("----------------------------");
+        System.out.println("The perimeter is up to: " +perimeter+ " meters.");
         
-        System.out.printf("L'aire du rectangle est : %.2f%n", area);
-        System.out.printf("Le périmètre du rectangle est : %.2f%n", perimeter);
+        //A program where you evaluate the result of an arithmetic expressions using unary operators.
+        
+        System.out.println("----------------------------");
+	    System.out.println("Planting a tree in the area makes us remain with: " + --area +" square.");
+        
+	    //A program to print the quotient and remainder of two numbers.
+        System.out.println("----------------------------");
+        if(width == 0) {
+        	System.out.println("Error: width cannot be null.");
+        }else if(length < width) {
+        	System.out.println("Error: Length & width values have certainly been mismatched.");
+        } else {
+        	double quotient = length / width;
+        	double remainder = length % width;
+        	
+        	System.out.println(
+        			"Based on calculations, length is "+quotient+" times the width, plus a remainder of "+remainder+"."
+        			);
+//            System.out.println("----------------------------");
+//        	System.out.println("Based on the remainder calculation, Length is "+quotient+" times width.");
+            
+        }
+	    
         scanner.close();
-    }
+     }
 }
