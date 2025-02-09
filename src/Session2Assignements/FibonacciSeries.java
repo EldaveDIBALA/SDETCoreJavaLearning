@@ -6,7 +6,7 @@ public class FibonacciSeries {
 
 	public static void main(String[] args) {
 		
-		// User action method
+		// User action method to give a hand for the size of the serie to compute20
 //		Scanner scanner = new Scanner(System.in);
 //		
 //		System.out.print("Enter the values of series whose Fibonacci you want to compute: ");
